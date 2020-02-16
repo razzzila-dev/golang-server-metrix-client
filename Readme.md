@@ -34,7 +34,7 @@ In `config.yml` file stored basic configurations:
 | Param name | Description                                                                                                               | Default                    | Examples                                                 |
 |------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------------------------------------|
 | key        | API key. Currently used as an authentication mechanism. String value. Recommended length 16+. !!!SHOULD BE URI ENCODED!!! | N2XMMQrt99Kk8JrT           | uXA4UM2EAmrY9aMp69vlfNaB69fuRjr 6VrrTePmhnDztsh W6vlfNaB |
-| port       | PORT which will be listened.                                                                                              | 32495                      | 4034 3333 58232                                          |
+| port       | PORT which will be listened.                                                                                              | 32642                      | 4034 3333 58232                                          |
 | url_prefix | A part of URI which goes right after host and in front of API key. !!!SHOULD BE URI ENCODED!!!                            | droplet-metrics/raz-client | hidden/path                                              |
 
 ## Usage
