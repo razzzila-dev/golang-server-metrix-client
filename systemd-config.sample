@@ -1,0 +1,14 @@
+[Unit]
+Description=Linux metrics HTTP client
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=www-data
+ExecStart=/path/to/built/file/golang-server-metrix-client
+
+[Install]
+WantedBy=multi-user.target
