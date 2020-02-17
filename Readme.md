@@ -44,11 +44,15 @@ Or run as service.
 To doing so, first change settings in the `./systemd-config.sample`.
 Most important here is `ExecStart` field which points to the built file.
 Also you can change `User` field.
+
+In `main.go` file on 91 line change "config.yml" to the path of the config file ("/path/to/package/root/folder/config.yml" for example).
+It's a hotfix for usage as service with the bug of the absolute path of the config file.
+
 ```BASH
-cp ./systemd-config.sample /etc/systemd/system/metrics-http-client.service
-systemctl status metrics-http-client
-systemctl stop metrics-http-client
-systemctl start metrics-http-client
+sudo cp ./systemd-config.sample /etc/systemd/system/metrics-http-client.service
+sudo service metrics-http-client status
+sudo service metrics-http-client restart
+sudo service metrics-http-client status
 ```
 
 ## TO-DO
